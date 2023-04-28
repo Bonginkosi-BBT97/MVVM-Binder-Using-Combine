@@ -14,9 +14,9 @@
 		1296C1EB2764177800CC9685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1296C1E92764177800CC9685 /* LaunchScreen.storyboard */; };
 		1296C1F32764188C00CC9685 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296C1F22764188C00CC9685 /* LoginViewController.swift */; };
 		1296C1F52764196700CC9685 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296C1F42764196700CC9685 /* HomeViewController.swift */; };
+		DE6781F429FC0BC2009BA2B7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6781F329FC0BC2009BA2B7 /* HomeViewModel.swift */; };
 		DEED547229F66D77007979D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED547129F66D77007979D6 /* User.swift */; };
 		DEED547429F66D87007979D6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED547329F66D87007979D6 /* LoginViewModel.swift */; };
-		DEED547729F66EBF007979D6 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED547629F66EBF007979D6 /* ObservableObject.swift */; };
 		DEED547929F670A2007979D6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEED547829F670A2007979D6 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +30,9 @@
 		1296C1EC2764177800CC9685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1296C1F22764188C00CC9685 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1296C1F42764196700CC9685 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DE6781F329FC0BC2009BA2B7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DEED547129F66D77007979D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DEED547329F66D87007979D6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		DEED547629F66EBF007979D6 /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
 		DEED547829F670A2007979D6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,18 +67,26 @@
 		1296C1DD2764177600CC9685 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				DE6781F229FC0AEA009BA2B7 /* HomeView */,
 				DEED547529F66E2D007979D6 /* LoginView */,
 				1296C1DE2764177600CC9685 /* AppDelegate.swift */,
 				1296C1E02764177600CC9685 /* SceneDelegate.swift */,
 				1296C1E42764177600CC9685 /* Main.storyboard */,
-				1296C1F42764196700CC9685 /* HomeViewController.swift */,
 				1296C1E72764177800CC9685 /* Assets.xcassets */,
 				1296C1E92764177800CC9685 /* LaunchScreen.storyboard */,
 				1296C1EC2764177800CC9685 /* Info.plist */,
-				DEED547629F66EBF007979D6 /* ObservableObject.swift */,
 				DEED547829F670A2007979D6 /* NetworkService.swift */,
 			);
 			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		DE6781F229FC0AEA009BA2B7 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				1296C1F42764196700CC9685 /* HomeViewController.swift */,
+				DE6781F329FC0BC2009BA2B7 /* HomeViewModel.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		DEED547529F66E2D007979D6 /* LoginView */ = {
@@ -164,9 +172,9 @@
 				1296C1F32764188C00CC9685 /* LoginViewController.swift in Sources */,
 				1296C1DF2764177600CC9685 /* AppDelegate.swift in Sources */,
 				DEED547929F670A2007979D6 /* NetworkService.swift in Sources */,
+				DE6781F429FC0BC2009BA2B7 /* HomeViewModel.swift in Sources */,
 				DEED547429F66D87007979D6 /* LoginViewModel.swift in Sources */,
 				1296C1E12764177600CC9685 /* SceneDelegate.swift in Sources */,
-				DEED547729F66EBF007979D6 /* ObservableObject.swift in Sources */,
 				DEED547229F66D77007979D6 /* User.swift in Sources */,
 				1296C1F52764196700CC9685 /* HomeViewController.swift in Sources */,
 			);

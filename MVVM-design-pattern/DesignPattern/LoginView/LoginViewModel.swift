@@ -8,7 +8,7 @@
 import Foundation
 
 final class LoginViewModel {
-    var error: ObservableObject<String?> = ObservableObject(value: nil)
+    @Published var error: String?
     
 //    init(error: ObservableObject<String?>) {
 //        self.error = error
@@ -16,7 +16,7 @@ final class LoginViewModel {
     
     func login(email: String, password: String) {
         NetworkService.shared.login(email: email, password: password) { [weak self] success in
-            self?.error.value = success ? nil : "Inavild Credentails!!!"
+            self?.error = success ? nil : "Inavild Credentails!!!"
         }
     }
 }
